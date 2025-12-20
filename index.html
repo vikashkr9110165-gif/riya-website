@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Thank You</title>
+<title>Private</title>
 
 <style>
 body{
@@ -30,13 +30,26 @@ p{font-size:1.1rem;line-height:1.6}
 
 </head>
 <body>
-<h1>Forever Together 🫶</h1>
-<p>
-<strong>Vikash ❤️ Riya</strong>
-</p>
-<p>
-Thank you Riya for supporting me always.<br>
-I will always stand by your side.
-</p>
+<h1>For Riya ❤️</h1>
+<p>This page is private.</p>
+<p class="hint">Hint: her name + 123 😉</p>
+
+<form onsubmit="return check()">
+<input type="password" id="pw" placeholder="Enter password"
+style="padding:10px;border-radius:10px;border:none">
+<br>
+<button class="btn" type="submit">Enter</button>
+</form>
+
+<script>
+function check(){
+  if(document.getElementById('pw').value==="riya123"){
+    window.location.href="page1.html";
+  } else {
+    alert("Wrong password 😅");
+  }
+  return false;
+}
+</script>
 </body>
 </html>
