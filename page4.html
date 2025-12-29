@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Greatest Singer</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+  text-align:center;
+  padding:40px;
+}
+h1{color:#b3005e;font-size:2.3rem}
+p{font-size:1.1rem}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 26px;
+  background:#ff4d88;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-size:1.05rem;
+}
+img{
+  width:200px;
+  border-radius:16px;
+  margin-top:20px;
+  box-shadow:0 8px 18px rgba(0,0,0,.3);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Listen to the greatest singer 🎤</h1>
+
+<img src="PASTE_RIYA_PHOTO_URL_HERE">
+
+<br><br>
+
+<button class="btn" onclick="play()">Play Audio 🎧</button>
+
+<br><br>
+
+<iframe id="audio"
+src="https://drive.google.com/file/d/1NvitF2xUnSNLRwP62PCjVfh-lnGTtfis/preview"
+width="100%" height="80"
+style="display:none" allow="autoplay"></iframe>
+
+<script>
+function play(){
+ document.getElementById("audio").style.display="block";
+}
+</script>
+
+<br><br>
+<a class="btn" href="page5.html">Next 🫶</a>
+
+</body>
+</html>
