@@ -4,8 +4,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Happy Birthday</title>
+  <div class="reveal">
+  <img src="/riya-website/IMG_7296.jpeg">
+  <img src="/riya-website/IMG_8051.jpeg">
+</div>
 
 <style>
+  .reveal img{
+  width:170px;
+  margin:10px;
+  border-radius:16px;
+  box-shadow:0 8px 18px rgba(0,0,0,.3);
+  opacity:0;
+  transform: scale(.8);
+  animation: show 1s forwards;
+}
+
+.reveal img:nth-child(1){ animation-delay:.3s }
+.reveal img:nth-child(2){ animation-delay:.8s }
+
+@keyframes show{
+  to{
+    opacity:1;
+    transform: scale(1);
+  }
+}
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
